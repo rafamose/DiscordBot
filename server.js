@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+require('dotenv').config();
 let mensajes = [
 "¡Has capturado al Yee! Con él empezó todo",
 "¡Has capturado a Mauricio Colmenero! Tiembla Machupichu",
@@ -25,6 +26,4 @@ client.on("ready", () => {
    }
  
  });
- 
- client.login("Nzc5MzIwOTgyMzIyMTUxNDI0.X7e1OQ.VzpHxrmNZc9Y1Kow4o_Y709-aXI");
- //client.login(process.env.TOKEN);
+ client.login(process.env.TOKEN);
