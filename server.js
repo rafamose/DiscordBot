@@ -16,7 +16,6 @@ let mensajes = [
 "¡Has capturado dos perros! Son buenos chicos y no ladran mucho",
 "¡Has capturado la localidad de Leioa! Ahí se encuentra la mejor universidad",
 "¡Has capturado a 3XA, el asesino de la famosa serie Castle! Mi madre flipaba con esta serie",
-"¡Has capturado la falsa muerte de Maria Teresa Campos! Bueno, mejor dicho, la \"falsa\" muerte",
 "¡Has capturado a Heatran desnudo! Esto se está poniendo un poco horny",
 "¡Has capturado al rapero Ice Cube pidiendo cubitos de hielo en una fiesta! Ojalá alguien le atienda a mi pana",
 "¡Has capturado al Gordo Texas! Yee-haw",
@@ -26,7 +25,8 @@ let mensajes = [
 "¡Has capturado a Segismundo García! Mira qué estilo tiene",
 "¡Has capturado a Luzu Sad! Luzu Sad",
 "¡Has capturado 3 copas de natillas con galletas! Comparte un poco anda",
-"¡Has capturado a Snobama! ¡Corre! Puede derrotarte con el poder de la nieve"
+"¡Has capturado a Snobama! ¡Corre! Puede derrotarte con el poder de la nieve",
+"¡Has capturado la falsa muerte de Maria Teresa Campos! Bueno, mejor dicho, la \"falsa\" muerte"
 ]
 
 client.on("ready", () => {
