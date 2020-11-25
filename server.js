@@ -36,7 +36,7 @@ let mensajes = [
 "¡Has capturado un oso de agua! El cabrón resiste en el espacio, qué envidia",
 "¡Has capturado una PS5! Flipa colega, podrás jugar al Beyond Good & Evil 2",
 "¡Has capturado acciones en bolsa! No sé qué se hace con eso, tú sabrás",
-"¡Has capturado Zamora! Haz lo que quieras con ella, total, a nadie le importa"
+"¡Has capturado Zamora! Haz lo que quieras con ella, total, a nadie le importa",
 "¡Has capturado a Victor Hugo en su lecho de muerte! Pobrecito :c",
 "¡Has capturado a 3 amigos sentados de pana! Se les ve agusto mi pana",
 "¡Has capturado a Chelo García Cortés! No sé quién es XD",
