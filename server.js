@@ -26,7 +26,22 @@ let mensajes = [
 "¡Has capturado a Luzu Sad! Luzu Sad",
 "¡Has capturado 3 copas de natillas con galletas! Comparte un poco anda",
 "¡Has capturado a Snobama! ¡Corre! Puede derrotarte con el poder de la nieve",
-"¡Has capturado la falsa muerte de Maria Teresa Campos! Bueno, mejor dicho, la \"falsa\" muerte"
+"¡Has capturado la falsa muerte de Maria Teresa Campos! Bueno, mejor dicho, la \"falsa\" muerte",
+"¡Has capturado a Herobrine, trans icon! Es canon",
+"¡Has capturado una carabina daisy modelo 105! Hace pum",
+"¡Has capturado Billy the Hatcher! Dispuesto a hacerte pasar un buen rato",
+"¡Has capturado el 11 de Abril! Es todo tuyo, celebra lo que quieras ese día",
+"¡Has capturado a Mocito Feliz! Aparecerá en todas tus fotos",
+"¡Has capturado un meme gracioso! Qué risa jajaja",
+"¡Has capturado un oso de agua! El cabrón resiste en el espacio, qué envidia",
+"¡Has capturado una PS5! Flipa colega, podrás jugar al Beyond Good & Evil 2",
+"¡Has capturado acciones en bolsa! No sé qué se hace con eso, tú sabrás",
+"¡Has capturado a Victor Hugo en su lecho de muerte! Pobrecito :c",
+"¡Has capturado a 3 amigos sentados de pana! Se les ve agusto mi pana",
+"¡Has capturado a Chelo García Cortés! No sé quién es XD",
+"¡Has capturado sensacionalismo barato! Enhorabuena, tendrás muchas visitas",
+"¡Has capturado un bebé! No sabe hablar ni andar, es un inútil",
+"¡Has capturado ese pájaro de ahí! No se ve muy bien pero bueno"
 ]
 
 client.on("ready", () => {
@@ -36,7 +51,7 @@ client.on("ready", () => {
  client.on("message", (message) => {
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
-       number = 25;
+       number = 41;
        imageNumber = Math.floor (Math.random() * (number -1 +1)) +1;
        message.channel.send(mensajes[imageNumber-1], {
             files: [
