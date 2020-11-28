@@ -42,7 +42,17 @@ let mensajes = [
 "¡Has capturado a Chelo García Cortés! No sé quién es XD",
 "¡Has capturado sensacionalismo barato! Enhorabuena, tendrás muchas visitas",
 "¡Has capturado un bebé! No sabe hablar ni andar, es un inútil",
-"¡Has capturado ese pájaro de ahí! No se ve muy bien pero bueno"
+"¡Has capturado ese pájaro de ahí! No se ve muy bien pero bueno",
+"¡Has capturado a Germán de Aída! Mucho mejor que Fidel, dónde vamos a parar",
+"¡Has capturado el minuto 6:30 de Spiderman 2! ¡Pizza time!",
+"¡Has capturado al Absolute Madman! Mírale, lo hizo, está loco",
+"¡Has capturado al gato que te había robado el Mountain Dew! Maldito ladrón",
+"¡Has capturado al hombre más guapo del mundo! Sencillamente irresistible",
+"¡Has capturado un kiwi bebé! Esta es la pinta que tiene la fruta antes de estar madura",
+"¡Has capturado un bonito pasillo! Oh, hay dos caminos. Será mejor que tomes el de la izquierda",
+"¡Has capturado una refrescopeta! Tiene un aspecto endiabladamente amenazante",
+"¡Has capturado a Jordi Pujol! Poco se habla de que este ser sigue vivo",
+"¡Has capturado a Danny DoRito! \"Oooh, pues tampoco está tan mal ser un dorito\", dijo sonriendo"
 ]
 
 client.on("ready", () => {
@@ -52,7 +62,7 @@ client.on("ready", () => {
  client.on("message", (message) => {
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
-       number = 41;
+       number = 51;
        imageNumber = Math.floor (Math.random() * (number -1 +1)) +1;
        message.channel.send(mensajes[imageNumber-1], {
             files: [
