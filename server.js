@@ -52,8 +52,21 @@ let mensajes = [
 "¡Has capturado un bonito pasillo! Oh, hay dos caminos. Será mejor que tomes el de la izquierda",
 "¡Has capturado una refrescopeta! Tiene un aspecto endiabladamente amenazante",
 "¡Has capturado a Jordi Pujol! Poco se habla de que este ser sigue vivo",
-"¡Has capturado a Danny DoRito! \"Oooh, pues tampoco está tan mal ser un dorito\", dijo sonriendo"
-]
+"¡Has capturado a Danny DoRito! \"Oooh, pues tampoco está tan mal ser un dorito\", dijo sonriendo",
+"¡Has capturado Death spacito! El videojuego creado por el genio Kojima Fonsi",
+"¡Has capturado proteína soluble de chocho! Mmmmm rico",
+"¡Has capturado este animal! No sé qué coño es, apáñatelas para averiguar qué come",
+"¡Has capturado a Ian McKellen en la película Cats! Meow",
+"¡Has capturado a Lady Gaga y Tony Bennett! Te quejarás eh, dos personas por una",
+"¡Has capturado a McManaman! Gran centrocampista retirado en 2005",
+"¡Has capturado el Easter Egg de la cabeza de John Romero en Doom 2! Este era el verdadero jefe final :o",
+"¡Has capturado el Multioso! Es muy majo en verdad, me daría pena matarlo",
+"¡Has capturado a Elodin el nominador! Ta loco ta loco",
+"¡Has capturado el cartel del Graspop de 2018! Santo Dios bendito",
+"¡Has capturado a Lin Ghast Miranda! Será añadido en Minecraft 2",
+"¡Has capturado un 2x1 en cristales! * para gafas de graduado de vista y de sol",
+"¡Has capturado un Hericium erinaceus! También llamado Melena de león, ¡es comestible!",
+"¡Has capturado una bella imagen de mis vacaciones en Japón en 1954! Qué buenos recuerdos tengo"]
 
 client.on("ready", () => {
     console.log("Estoy listo!");
@@ -62,7 +75,7 @@ client.on("ready", () => {
  client.on("message", (message) => {
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
-       number = 51;
+       number = 65;
        imageNumber = Math.floor (Math.random() * (number -1 +1)) +1;
        message.channel.send(mensajes[imageNumber-1], {
             files: [
