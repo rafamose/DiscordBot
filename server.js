@@ -66,7 +66,17 @@ let mensajes = [
 "¡Has capturado a Lin Ghast Miranda! Será añadido en Minecraft 2",
 "¡Has capturado un 2x1 en cristales! * para gafas de graduado de vista y de sol",
 "¡Has capturado un Hericium erinaceus! También llamado Melena de león, ¡es comestible!",
-"¡Has capturado una bella imagen de mis vacaciones en Japón en 1954! Qué buenos recuerdos tengo"]
+"¡Has capturado una bella imagen de mis vacaciones en Japón en 1954! Qué buenos recuerdos tengo",
+"¡Has capturado la Fábrica de Moneda y Timbre! Ojalá visitarla, la verdad",
+"¡Has capturado la cuenta de numeritos! Espero que no twittee más desde iPhone",
+"¡Has capturado el d100! Es caótico pero divertido",
+"¡Has capturado a Paca la Piraña! Yo soy mujer polaca, con el coño atrás como las vacas",
+"¡Has capturado chistes cortos muy divertidos para los niños! JA ja ja...",
+"¡Has capturado a Baby Ezio! El nuevo personaje de Mario Kart",
+"¡Has capturado a Wesley Snipes siendo detenido por fraude fiscal! Dónde te sentastee",
+"¡Has capturado tres rábanos y medio! Es que estaban de oferta",
+"¡Has capturado Niños Grandes 2! La obra magna de Adam Sandler",
+"¡Has capturado la bandera de la Isla de Man! Mmmm patas"]
 
 client.on("ready", () => {
     console.log("Estoy listo!");
@@ -75,7 +85,7 @@ client.on("ready", () => {
  client.on("message", (message) => {
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
-       number = 65;
+       number = 75;
        imageNumber = Math.floor (Math.random() * (number -1 +1)) +1;
        message.channel.send(mensajes[imageNumber-1], {
             files: [
