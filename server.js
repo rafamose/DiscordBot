@@ -76,7 +76,21 @@ let mensajes = [
 "¡Has capturado a Wesley Snipes siendo detenido por fraude fiscal! Dónde te sentastee",
 "¡Has capturado tres rábanos y medio! Es que estaban de oferta",
 "¡Has capturado Niños Grandes 2! La obra magna de Adam Sandler",
-"¡Has capturado la bandera de la Isla de Man! Mmmm patas"]
+"¡Has capturado la bandera de la Isla de Man! Mmmm patas",
+"¡Has capturado al hombre lámpara! Pero no le molestes porfa, parece ocupado",
+"¡Has capturado a Gaimon! El verdadero protagonista de One Piece",
+"¡Has capturado Shrek 5! El endgame de los ogros",
+"¡Has capturado Homunculus Loxodontus! Espera pacientemente",
+"¡Has capturado un botón rojo! ¡Por favor no lo toques!",
+"¡Has capturado el disco 11 de Minecraft! -Toc toc toc- pffshhhh uf uf hmph -toc toc- -flush-",
+"¡Has capturado una figura de Technoblade! Para los amantes de las patata",
+"¡Has capturado el single de Lore Lore Macu Macu! Hace 54 años de esto. Feel old yet?",
+"¡Has capturado un tractor de ocasión! Nada mejor que un John Deere 3350 1990/115CV",
+"¡Has capturado la universidad de Murcia! Donde Grefg se sacó la carrera de ser un picao",
+"¡Has capturado a Ennio Morricone! Pobrecillo, déjale, si está muerto",
+"¡Has capturado a Papá Pig comiéndose a Peppa Pig! El último capítulo de la serie",
+"¡Has capturado un mapuche! Pregúntale a Fran qué hace. Y si eres Fran pregúntatelo a ti mismo",
+"¡Has capturado el Tiktok de Cristina Pedroche! ¡Risas infinitas!"]
 
 client.on("ready", () => {
     console.log("Estoy listo!");
@@ -85,7 +99,7 @@ client.on("ready", () => {
  client.on("message", (message) => {
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
-       number = 75;
+       number = 90;
        imageNumber = Math.floor (Math.random() * (number -1 +1)) +1;
        message.channel.send(mensajes[imageNumber-1], {
             files: [
