@@ -90,7 +90,17 @@ let mensajes = [
 "¡Has capturado a Ennio Morricone! Pobrecillo, déjale, si está muerto",
 "¡Has capturado a Papá Pig comiéndose a Peppa Pig! El último capítulo de la serie",
 "¡Has capturado un mapuche! Pregúntale a Fran qué hace. Y si eres Fran pregúntatelo a ti mismo",
-"¡Has capturado el Tiktok de Cristina Pedroche! ¡Risas infinitas!"]
+"¡Has capturado el Tiktok de Cristina Pedroche! ¡Risas infinitas!",
+"¡Has capturado el ayuntamiento de Mollet! És molt bonic",
+"¡Has capturado hentai de buizel! Joder qué asco tío ostia joder mierda",
+"¡Has capturado al Yannis! Qué suerte tío",
+"¡Has capturado la Game Boy SP Tribal! El más guay del barrio",
+"¡Has capturado el skate sobre ruedas! Menudo swag tío",
+"¡Has capturado un emoji hetero! Buenas noches princesa",
+"¡Has capturado 4 achantes en la puerta de marina! Te lo has comío 4 veces eeee",
+"¡Has capturado Fuyu no Hanashi! Temardo de Given",
+"¡Has capturado la Virgen del Pilar! Dice que no quiere ser francesa",
+"¡Has capturado Boboddy! La primera B es por Biznuz"]
 
 client.on("ready", () => {
     console.log("Estoy listo!");
