@@ -57,7 +57,7 @@ let mensajes = [
 "¡Has capturado proteína soluble de chocho! Mmmmm rico",
 "¡Has capturado este animal! No sé qué coño es, apáñatelas para averiguar qué come",
 "¡Has capturado a Ian McKellen en la película Cats! Meow",
-"¡Has capturado a Lady Gaga y Tony Bennett! Te quejarás eh, dos personas por una",
+"¡Has capturado a Lady Gaga y Tony Bennett! Te quejarás eh, dos personas en una sola tirada",
 "¡Has capturado a McManaman! Gran centrocampista retirado en 2005",
 "¡Has capturado el Easter Egg de la cabeza de John Romero en Doom 2! Este era el verdadero jefe final :o",
 "¡Has capturado el Multioso! Es muy majo en verdad, me daría pena matarlo",
@@ -86,7 +86,7 @@ let mensajes = [
 "¡Has capturado una figura de Technoblade! Para los amantes de las patata",
 "¡Has capturado el single de Lore Lore Macu Macu! Hace 54 años de esto. Feel old yet?",
 "¡Has capturado un tractor de ocasión! Nada mejor que un John Deere 3350 1990/115CV",
-"¡Has capturado a Dr. Phil M&M! Lo que aquí sería Juan y Medio Conguito"
+"¡Has capturado a Dr. Phil M&M! Lo que aquí sería Juan y Medio Conguito",
 "¡Has capturado la universidad de Murcia! Donde Grefg se sacó la carrera de ser un picao",
 "¡Has capturado a Ennio Morricone! Pobrecillo, déjale, si está muerto",
 "¡Has capturado a Papá Pig comiéndose a Peppa Pig! El último capítulo de la serie",
