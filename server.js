@@ -100,7 +100,17 @@ let mensajes = [
 "¡Has capturado 4 achantes en la puerta de marina! Te lo has comío 4 veces eeee",
 "¡Has capturado Fuyu no Hanashi! Temardo de Given",
 "¡Has capturado la Virgen del Pilar! Dice que no quiere ser francesa",
-"¡Has capturado Boboddy! La primera B es por Biznuz"]
+"¡Has capturado Boboddy! La primera B es por Biznuz",
+"¡Has capturado al vecino mientras cortaba las plantas de su jardín! Joder tío, ya le has jodido todo",
+"¡Has capturado una Ouya! Inversión de futuro",
+"¡Has capturado el pelo de Phil Spector! Ya está muerto así que no creo que lo use",
+"¡Has capturado a Adelante! Es muy cariñosa",
+"¡Has capturado a Pierluigi Collina! El árbitro de la portada del Pro Evolution Soccer 2003",
+"¡Has capturado un meme sobre la Comuna! Efectivamente nunca hubo música medieval",
+"¡Has capturado un bolardo de Barcelona! Nuestro salvador",
+"¡Has capturado nuestro récord en un Escape Room! Fuimos los peores entre los mejores",
+"¡Has capturado al señor que no conocemos! Pero es como si fuera parte de la familia",
+"¡Has capturado a Marcel Steiner en acción! Participó en Vela en la clase Tornado entre los años 2016 y 2019"]
 
 client.on("ready", () => {
     console.log("Estoy listo!");
