@@ -119,7 +119,7 @@ client.on("ready", () => {
  client.on("message", (message) => {
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
-       number = 90;
+       number = 110;
        imageNumber = Math.floor (Math.random() * (number -1 +1)) +1;
        message.channel.send(mensajes[imageNumber-1], {
             files: [
