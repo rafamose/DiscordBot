@@ -86,6 +86,7 @@ let mensajes = [
 "¡Has capturado una figura de Technoblade! Para los amantes de las patata",
 "¡Has capturado el single de Lore Lore Macu Macu! Hace 54 años de esto. Feel old yet?",
 "¡Has capturado un tractor de ocasión! Nada mejor que un John Deere 3350 1990/115CV",
+"¡Has capturado a Dr. Phil M&M! Lo que aquí sería Juan y Medio Conguito"
 "¡Has capturado la universidad de Murcia! Donde Grefg se sacó la carrera de ser un picao",
 "¡Has capturado a Ennio Morricone! Pobrecillo, déjale, si está muerto",
 "¡Has capturado a Papá Pig comiéndose a Peppa Pig! El último capítulo de la serie",
