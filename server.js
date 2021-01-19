@@ -111,7 +111,19 @@ let mensajes = [
 "¡Has capturado un bolardo de Barcelona! Nuestro salvador",
 "¡Has capturado nuestro récord en un Escape Room! Fuimos los peores entre los mejores",
 "¡Has capturado al señor que no conocemos! Pero es como si fuera parte de la familia",
-"¡Has capturado a Marcel Steiner en acción! Participó en Vela en la clase Tornado entre los años 2016 y 2019"]
+"¡Has capturado a Marcel Steiner en acción! Participó en Vela en la clase Tornado entre los años 2016 y 2019",
+"¡Has capturado a Fernando Tejero con el cantante de Franz Ferdinand! El segundo no tenía ni idea de con quién se estaba echando la foto",
+"¡Has capturado al famoso jugador de fútbol Kun Agüero! Bueno vamo a juga",
+"¡Has capturado a Shinji pidiendo a Glados que ponga despacito! Es un ejemplo de algo que se puede dibujar con una tableta gráfica",
+"¡Has capturado un ficus! ¡Silencio! Está haciendo la fotosíntesis",
+"¡Has capturado a Ringo Starr reflejado en una cuchara! Otro día más en la vida de Ringo",
+"¡Has capturado un bonito fondo de pantalla! Sé la envídia de tus amigos",
+"¡Has capturado una piedra! No sé cuál es, pregúntale a Eloy",
+"¡Has capturado a una abuela! O un mono, no lo tengo claro, lo dejo abierto a debate",
+"¡Has capturado al perro very nice! Very nice",
+"¡Has capturado al davus! ¡Cuidado! ¡Va armado!"]
+
+let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Basadísimo", "Emprendedor", "Otaku", "Suerte en cajas del OW", "Heterosexualidad", "joto", "RafaTriviP"]
 
 client.on("ready", () => {
     console.log("Estoy listo!");
@@ -120,13 +132,18 @@ client.on("ready", () => {
  client.on("message", (message) => {
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
-       number = 110;
+       number = 120;
        imageNumber = Math.floor (Math.random() * (number -1 +1)) +1;
        message.channel.send(mensajes[imageNumber-1], {
             files: [
                   "./images/" + imageNumber + ".png"
             ]
        });
+   }
+      if(message.content.startsWith("/horoscopo")) {
+       var lista = [0,1,2,3,4,5,6,7,8,9];
+		lista = lista.sort(function() {return Math.random() - 0.5});
+       message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + Math.round(Math.random()*100) + "%, " + horoscopo[lista[1]] + ": " + Math.round(Math.random()*100) + "%, " + horoscopo[lista[2]] + ": " + Math.round(Math.random()*100) + "%, " + horoscopo[lista[3]] + ": " + Math.round(Math.random()*100) + "%");
    }
  
  });
