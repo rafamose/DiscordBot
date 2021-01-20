@@ -157,7 +157,7 @@ client.on("ready", () => {
 	   var listaExtra = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]; 
 		lista = lista.sort(function() {return Math.random() - 0.5});
 		listaExtra = listaExtra.sort(function() {return Math.random() - 0.5});
-       message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + Math.round(Math.random()*120-10) + "%, " + horoscopo[lista[1]] + ": " + Math.round(Math.random()*120-10) + "%, " + horoscopo[lista[2]] + ": " + Math.round(Math.random()*120-10) + "%, " + horoscopoExtra[listaExtra[0]]);
+       message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopo[lista[1]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopo[lista[2]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopoExtra[listaExtra[0]]);
    }
  
  });
