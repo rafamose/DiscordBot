@@ -137,6 +137,8 @@ let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Catalán", "Basadísimo", 
 
 let horoscopoExtra = ["Cyberpunk: 2077%", "Fallout: 76%", "Soldado: 76%", "Tú: en mi camita bb", "The Virgin: tú vs The Chad: yo", "Mi bebesita: bebe lin", "Arctic Monkeys: 505%", "Rush: 2112%", "RafaTrivi: P", "El final de Ronda de la Manca: la casa de Trivi", "Dinero: por favor", "Varo: te quiero", "Very nice: 69%", "Illo: Juan", "Cómo acabaremos según un vagabundo: Solos, tristes y abandonados"]
 
+
+
 client.on("ready", () => {
     console.log("Estoy listo!");
  });
@@ -154,11 +156,16 @@ client.on("ready", () => {
    }
       if(message.content.startsWith("/horoscopo")) {
        var lista = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22];
-	   var listaExtra = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]; 
+	   //var listaExtra = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]; 
 		lista = lista.sort(function() {return Math.random() - 0.5});
-		listaExtra = listaExtra.sort(function() {return Math.random() - 0.5});
-       message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopo[lista[1]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopo[lista[2]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopoExtra[listaExtra[0]]);
+		//listaExtra = listaExtra.sort(function() {return Math.random() - 0.5});
+       message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + randomNumber(110,10) + "%, " + horoscopo[lista[1]] + ": " + randomNumber(110,10) + "%, " + horoscopo[lista[2]] + ": " + randomNumber(110,10) + "%, " + horoscopoExtra[randomNumber(14,0)]);
    }
  
  });
+ 
+ function randomNumber(a, b){
+	 return (Math.round(Math.random()*(a+b))-b;
+ }
+ 
  client.login(process.env.TOKEN);
