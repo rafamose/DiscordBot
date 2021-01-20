@@ -145,9 +145,6 @@ client.on("ready", () => {
  });
  
  client.on("message", (message) => {
-	 function randomNumber(a, b){
-	 return (Math.round(Math.random()*(a+b))-b;
-	}
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
        number = 130;
@@ -162,8 +159,12 @@ client.on("ready", () => {
        var lista = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22];
 	   //var listaExtra = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]; 
 		lista = lista.sort(function() {return Math.random() - 0.5});
+		var porcentajes[];
+		porcentajes[0]=Math.round(Math.random()*120)-10;
+		porcentajes[1]=Math.round(Math.random()*120)-10;
+		porcentajes[2]=Math.round(Math.random()*120)-10;
 		//listaExtra = listaExtra.sort(function() {return Math.random() - 0.5});
-       message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + randomNumber(110,10) + "%, " + horoscopo[lista[1]] + ": " + randomNumber(110,10) + "%, " + horoscopo[lista[2]] + ": " + randomNumber(110,10) + "%, " + horoscopoExtra[randomNumber(14,0)]);
+       message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + porcentajes[0] + "%, " + horoscopo[lista[1]] + ": " + porcentajes[1] + "%, " + horoscopo[lista[2]] + ": " + porcentajes[2] + "%, " + horoscopoExtra[randomNumber(14,0)]);
    }
  
  });
