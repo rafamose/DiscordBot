@@ -121,9 +121,21 @@ let mensajes = [
 "¡Has capturado una piedra! No sé cuál es, pregúntale a Eloy",
 "¡Has capturado a una abuela! O un mono, no lo tengo claro, lo dejo abierto a debate",
 "¡Has capturado al perro very nice! Very nice",
-"¡Has capturado al davus! ¡Cuidado! ¡Va armado!"]
+"¡Has capturado al davus! ¡Cuidado! ¡Va armado!",
+"¡Has capturado al Antherio profe! Te enseña todo sobre los ficus japoneses",
+"¡Has capturado al chihuahua adios! Adios!",
+"¡Has capturado al chamaco! 10 XD y lo tiro",
+"¡Has capturado el Parking de Cultos Religiosos! Para aparcar tu sotana",
+"¡Has capturado a Hanzo Betis! Estará disponible en Overwatch 2",
+"¡Has capturado a Porta! Juegazo",
+"¡Has capturado a Sif! Es el Gran Lobo Gris",
+"¡Has capturado la imagen más desagradable de internet! Apártala por favor",
+"¡Has capturado un sabroso almuerzo! ¡Que aproveche!",
+"¡Has capturado a una persona llorando muy fuerte! ¡Mira qué fuerte llora!"]
 
-let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Basadísimo", "Emprendedor", "Otaku", "Suerte en cajas del OW", "Heterosexualidad", "joto", "RafaTriviP"]
+let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Catalán", "Basadísimo", "Emprendedor", "Otaku", "Suerte en cajas del OW", "Heterosexualidad", "Joto", "RafaTriviP", "Dab", "Amor", "Salud", "Dinero", "Suerte", "Fuerza", "Destreza", "Inteligencia", "Excitado", "Mapuche", "Madrileño", "Furro"]
+
+let horoscopoExtra = ["Cyberpunk: 2077%", "Fallout: 76%", "Soldado: 76%", "Tú: en mi camita bb", "The Virgin: tú vs The Chad: yo", "Mi bebesita: bebe lin", "Arctic Monkeys: 505%", "Rush: 2112%", "RafaTrivi: P", "El final de Ronda de la Manca: la casa de Trivi", "Dinero: por favor", "Varo: te quiero", "Very nice: 69%", "Illo: Juan", "Cómo acabaremos según un vagabundo: Solos, tristes y abandonados"]
 
 client.on("ready", () => {
     console.log("Estoy listo!");
@@ -132,7 +144,7 @@ client.on("ready", () => {
  client.on("message", (message) => {
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
-       number = 120;
+       number = 130;
        imageNumber = Math.floor (Math.random() * (number -1 +1)) +1;
        message.channel.send(mensajes[imageNumber-1], {
             files: [
@@ -141,9 +153,11 @@ client.on("ready", () => {
        });
    }
       if(message.content.startsWith("/horoscopo")) {
-       var lista = [0,1,2,3,4,5,6,7,8,9];
+       var lista = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22];
+	   var listaExtra = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]; 
 		lista = lista.sort(function() {return Math.random() - 0.5});
-       message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + Math.round(Math.random()*100) + "%, " + horoscopo[lista[1]] + ": " + Math.round(Math.random()*100) + "%, " + horoscopo[lista[2]] + ": " + Math.round(Math.random()*100) + "%, " + horoscopo[lista[3]] + ": " + Math.round(Math.random()*100) + "%");
+		listaExtra = listaExtra.sort(function() {return Math.random() - 0.5});
+       message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + Math.round(Math.random()*120)-10 + "%, " + horoscopo[lista[1]] + ": " + Math.round(Math.random()*120)-10 + "%, " + horoscopo[lista[2]] + ": " + Math.round(Math.random()*120)-10 + "%, " + horoscopoExtra[listaExtra[0]]);
    }
  
  });
