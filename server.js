@@ -138,15 +138,16 @@ let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Catalán", "Basadísimo", 
 let horoscopoExtra = ["Cyberpunk: 2077%", "Fallout: 76%", "Soldado: 76%", "Tú: en mi camita bb", "The Virgin: tú vs The Chad: yo", "Mi bebesita: bebe lin", "Arctic Monkeys: 505%", "Rush: 2112%", "RafaTrivi: P", "El final de Ronda de la Manca: la casa de Trivi", "Dinero: por favor", "Varo: te quiero", "Very nice: 69%", "Illo: Juan", "Cómo acabaremos según un vagabundo: Solos, tristes y abandonados"]
 
  
- function randomNumber(a, b){
-	 return (Math.round(Math.random()*(a+b))-b;
- }
+
 
 client.on("ready", () => {
     console.log("Estoy listo!");
  });
  
  client.on("message", (message) => {
+	 function randomNumber(a, b){
+	 return (Math.round(Math.random()*(a+b))-b;
+	}
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
        number = 130;
