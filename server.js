@@ -124,7 +124,7 @@ let mensajes = [
 "¡Has capturado al davus! ¡Cuidado! ¡Va armado!",
 "¡Has capturado al Antherio profe! Te enseña todo sobre los ficus japoneses",
 "¡Has capturado al chihuahua adios! Adios!",
-"¡Has capturado al chamaco! 10 XD y lo tiro",
+"¡Has capturado al chamaco! 50 XD y lo tiro",
 "¡Has capturado el Parking de Cultos Religiosos! Para aparcar tu sotana",
 "¡Has capturado a Hanzo Betis! Estará disponible en Overwatch 2",
 "¡Has capturado a Porta! Juegazo",
@@ -157,7 +157,7 @@ client.on("ready", () => {
 	   var listaExtra = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]; 
 		lista = lista.sort(function() {return Math.random() - 0.5});
 		listaExtra = listaExtra.sort(function() {return Math.random() - 0.5});
-       message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + Math.round(Math.random()*120)-10 + "%, " + horoscopo[lista[1]] + ": " + Math.round(Math.random()*120)-10 + "%, " + horoscopo[lista[2]] + ": " + Math.round(Math.random()*120)-10 + "%, " + horoscopoExtra[listaExtra[0]]);
+       message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + (Math.round(Math.random()*120)-10) + "%, " + horoscopo[lista[1]] + ": " + (Math.round(Math.random()*120)-10) + "%, " + horoscopo[lista[2]] + ": " + (Math.round(Math.random()*120)-10) + "%, " + horoscopoExtra[listaExtra[0]]);
    }
  
  });
