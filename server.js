@@ -131,11 +131,21 @@ let mensajes = [
 "¡Has capturado a Sif! Es el Gran Lobo Gris",
 "¡Has capturado la imagen más desagradable de internet! Apártala por favor",
 "¡Has capturado un sabroso almuerzo! ¡Que aproveche!",
-"¡Has capturado a una persona llorando muy fuerte! ¡Mira qué fuerte llora!"]
+"¡Has capturado a una persona llorando muy fuerte! ¡Mira qué fuerte llora!",
+"¡Has capturado a un titán con una polla titánica! Titánicamente juguetón",
+"¡Has capturado a Benedict Cucumber! Es la mierda más graciosa que he visto",
+"¡Has capturado un Jabalí Común! K susto me llevao sus muertos",
+"¡Has capturado la insoportable levedad del ser! Pf qué putada tío",
+"¡Has capturado a Vegetta Fascista! Es decir, Vegetta normal y corriente",
+"¡Has capturado a Paco Sans! Tirititi",
+"¡Has capturado una escena destornillante de Campamento Flipy! Es, si se me permite la expresión, tronchante",
+"¡Has capturado una puta escultura griega! Pero como no tiene sobrepeso los progres no irán a aplaudir su autoestima",
+"¡Has capturado la desesperación! Ta wapo e XD",
+"¡Has capturado la skin de Daredevil en el Fortnite! Tienes solo 3 días para pagar 10 euros por ella y luego desaparece para siempre"]
 
-let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Catalán", "Basadísimo", "Emprendedor", "Otaku", "Suerte en cajas del OW", "Heterosexualidad", "Joto", "RafaTriviP", "Dab", "Amor", "Salud", "Dinero", "Suerte", "Fuerza", "Destreza", "Inteligencia", "Excitado", "Mapuche", "Madrileño", "Furro"]
+let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Catalán", "Basadísimo", "Emprendedor", "Otaku", "Suerte en cajas del OW", "Heterosexualidad", "Joto", "RafaTriviP", "Dab", "Amor", "Salud", "Dinero", "Suerte", "Fuerza", "Destreza", "Inteligencia", "Excitado", "Mapuche", "Madrileño", "Furro", "Escultura Griega", "kawaii", "destornillante", "máquina", "fiera"]
 
-let horoscopoExtra = ["Cyberpunk: 2077%", "Fallout: 76%", "Soldado: 76%", "Tú: en mi camita bb", "The Virgin: tú vs The Chad: yo", "Mi bebesita: bebe lin", "Arctic Monkeys: 505%", "Rush: 2112%", "RafaTrivi: P", "El final de Ronda de la Manca: la casa de Trivi", "Dinero: por favor", "Varo: te quiero", "Very nice: 69%", "Illo: Juan", "Cómo acabaremos según un vagabundo: Solos, tristes y abandonados"]
+let horoscopoExtra = ["Cyberpunk: 2077%", "Fallout: 76%", "Soldado: 76%", "Tú: en mi camita bb", "The Virgin: tú vs The Chad: yo", "Mi bebesita: bebe lin", "Arctic Monkeys: 505%", "Rush: 2112%", "RafaTrivi: P", "El final de Ronda de la Manca: la casa de Trivi", "Dinero: por favor", "Varo: te quiero", "Niceice: 69%", "Illo: Juan", "Cómo acabarás según un vagabundo: Solos, tristes y abandonados", "Ben: 10%", "Schalke: 04%", "Iván: B", "Sneaky Reinhardt: por favor Fran no", "Tontos muy tontos: 2%"]
 
 client.on("ready", () => {
     console.log("Estoy listo!");
@@ -144,7 +154,7 @@ client.on("ready", () => {
  client.on("message", (message) => {
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
-       number = 130;
+       number = 140;
        imageNumber = Math.floor (Math.random() * (number -1 +1)) +1;
        message.channel.send(mensajes[imageNumber-1], {
             files: [
@@ -153,8 +163,8 @@ client.on("ready", () => {
        });
    }
       if(message.content.startsWith("/horoscopo")) {
-       var lista = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22];
-	   var listaExtra = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]; 
+       var lista = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27];
+	   var listaExtra = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]; 
 		lista = lista.sort(function() {return Math.random() - 0.5});
 		listaExtra = listaExtra.sort(function() {return Math.random() - 0.5});
        message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopo[lista[1]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopo[lista[2]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopoExtra[listaExtra[0]]);
