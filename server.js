@@ -141,11 +141,21 @@ let mensajes = [
 "¡Has capturado una escena destornillante de Campamento Flipy! Es, si se me permite la expresión, tronchante",
 "¡Has capturado una puta escultura griega! Pero como no tiene sobrepeso los progres no irán a aplaudir su autoestima",
 "¡Has capturado la desesperación! Ta wapo e XD",
-"¡Has capturado la skin de Daredevil en el Fortnite! Tienes solo 3 días para pagar 10 euros por ella y luego desaparece para siempre"]
+"¡Has capturado la skin de Daredevil en el Fortnite! Tienes solo 3 días para pagar 10 euros por ella y luego desaparece para siempre",
+"¡Has capturado el concepto del paso del tiempo! No veas tú qué movida",
+"¡Has capturado la versión original de la Metamorfosis de Kafka! Dicen que está chulo",
+"¡Has capturado un cielo bonito! Sé de alguien a quien le gustaría",
+"¡Has capturado una imagen relatable! Cuando te pasa",
+"¡Has capturado un cubo Ghost! Encima con las pegatinas esas para que no se escurra",
+"¡Has capturado la vaca de Top Secret! Peli muy recomendada",
+"¡Has capturado a Lou Ferrigno! El mejor Hulk y no hay discusión",
+"¡Has capturado la cara de iTownGameplay! Le noto raro, qué estaría haciendo en ese momento",
+"¡Has capturado al alcalde de Vigo! Le falta luces a este señor",
+"¡Has capturado un álbum de Lamicards! Pero vacío, ahora te toca completarlo"]
 
-let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Catalán", "Basadísimo", "Emprendedor", "Otaku", "Suerte en cajas del OW", "Heterosexualidad", "Joto", "RafaTriviP", "Dab", "Amor", "Salud", "Dinero", "Suerte", "Fuerza", "Destreza", "Inteligencia", "Excitado", "Mapuche", "Madrileño", "Furro", "Escultura Griega", "kawaii", "destornillante", "máquina", "fiera"]
+let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Catalán", "Basadísimo", "Emprendedor", "Otaku", "Suerte en cajas del OW", "Heterosexualidad", "Joto", "RafaTriviP", "Dab", "Amor", "Salud", "Dinero", "Suerte", "Fuerza", "Destreza", "Inteligencia", "Excitado", "Mapuche", "Madrileño", "Furro", "Escultura Griega", "Kawaii", "Destornillante", "Máquina", "Fiera"]
 
-let horoscopoExtra = ["Cyberpunk: 2077%", "Fallout: 76%", "Soldado: 76%", "Tú: en mi camita bb", "The Virgin: tú vs The Chad: yo", "Mi bebesita: bebe lin", "Arctic Monkeys: 505%", "Rush: 2112%", "RafaTrivi: P", "El final de Ronda de la Manca: la casa de Trivi", "Dinero: por favor", "Varo: te quiero", "Niceice: 69%", "Illo: Juan", "Cómo acabarás según un vagabundo: Solos, tristes y abandonados", "Ben: 10%", "Schalke: 04%", "Iván: B", "Sneaky Reinhardt: por favor Fran no", "Tontos muy tontos: 2%"]
+let horoscopoExtra = ["Cyberpunk: 2077%", "Fallout: 76%", "Soldado: 76%", "Tú: en mi camita bb", "The Virgin: tú vs The Chad: yo", "Mi bebesita: bebe lin", "Arctic Monkeys: 505%", "Rush: 2112%", "RafaTrivi: P", "El final de Ronda de la Manca: la casa de Trivi", "Dinero: por favor", "Varo: te quiero", "Niceice: 69%", "Illo: Juan", "Cómo acabarás según un vagabundo: Solos, tristes y abandonados", "Ben: 10%", "Schalke: 04%", "Iván: B", "Sneaky Reinhardt: por favor Fran no", "Tontos muy tontos: 2%", "La ardilla hace: ajijijija", "¿Cuántos vigilan los cañaverales del sur?: unos cuatro", "Vegetta: 777% de facha"]
 
 client.on("ready", () => {
     console.log("Estoy listo!");
@@ -154,7 +164,7 @@ client.on("ready", () => {
  client.on("message", (message) => {
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
-       number = 140;
+       number = 150;
        imageNumber = Math.floor (Math.random() * (number -1 +1)) +1;
        message.channel.send(mensajes[imageNumber-1], {
             files: [
