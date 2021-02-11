@@ -151,11 +151,21 @@ let mensajes = [
 "¡Has capturado a Lou Ferrigno! El mejor Hulk y no hay discusión",
 "¡Has capturado la cara de iTownGameplay! Le noto raro, qué estaría haciendo en ese momento",
 "¡Has capturado al alcalde de Vigo! Le falta luces a este señor",
-"¡Has capturado un álbum de Lamicards! Pero vacío, ahora te toca completarlo"]
+"¡Has capturado un álbum de Lamicards! Pero vacío, ahora te toca completarlo",
+"¡Has capturado una agradable partida de rol al aire libre! Ya está empezada, pero puedes unirte si quieres",
+"¡Has capturado una bonita mano! Ufff qué bonita es, me gusta",
+"¡Has capturado un rey en castillo! Wawawiwo",
+"¡Has capturado a Sabaton encima de un tanque! Saluda, ¡no muerden!",
+"¡Has capturado un toro viniendo a ti a toda velocidad! Detrás de él hay como otros 900, así que no tengas prisa",
+"¡Has capturado una copia de Moulin Rouge en italiano! Ahora es mucho más sexy",
+"¡Has capturado el manillar de aquel incidente! Literalmente la peor decisión que tomé en la vida",
+"¡Has capturado a Szeth-son-son-Vallano! Es calvo",
+"¡Has capturado un temazo! Tiene hasta las lyrics para que no te pierdas al cantar ole ole ole ole beti oleee",
+"¡Has capturado la prueba del código morse! Apunta Varo: raya punto punto espacio creo ¿punto? quizás era una raya da igual punto punto raya puede que espacio ¿lo estás apuntando?"]
 
 let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Catalán", "Basadísimo", "Emprendedor", "Otaku", "Suerte en cajas del OW", "Heterosexualidad", "Joto", "RafaTriviP", "Dab", "Amor", "Salud", "Dinero", "Suerte", "Fuerza", "Destreza", "Inteligencia", "Excitado", "Mapuche", "Madrileño", "Furro", "Escultura Griega", "Kawaii", "Destornillante", "Máquina", "Fiera"]
 
-let horoscopoExtra = ["Cyberpunk: 2077%", "Fallout: 76%", "Soldado: 76%", "Tú: en mi camita bb", "The Virgin: tú vs The Chad: yo", "Mi bebesita: bebe lin", "Arctic Monkeys: 505%", "Rush: 2112%", "RafaTrivi: P", "El final de Ronda de la Manca: la casa de Trivi", "Dinero: por favor", "Varo: te quiero", "Niceice: 69%", "Illo: Juan", "Cómo acabarás según un vagabundo: Solos, tristes y abandonados", "Ben: 10%", "Schalke: 04%", "Iván: B", "Sneaky Reinhardt: por favor Fran no", "Tontos muy tontos: 2%", "La ardilla hace: ajijijija", "¿Cuántos vigilan los cañaverales del sur?: unos cuatro", "Vegetta: 777% de facha"]
+let horoscopoExtra = ["Cyberpunk: 2077%", "Fallout: 76%", "Soldado: 76%", "Tú: en mi camita bb", "The Virgin: tú vs The Chad: yo", "Mi bebesita: bebe lin", "Arctic Monkeys: 505%", "Rush: 2112%", "RafaTrivi: P", "El final de Ronda de la Manca: la casa de Trivi", "Dinero: por favor", "Nice: 69%", "Illo: Juan", "Cómo acabarás según un vagabundo: Solos, tristes y abandonados", "Ben: 10%", "Schalke: 04%", "Iván: B", "Sneaky Reinhardt: por favor Fran no", "Tontos muy tontos: 2%", "La ardilla hace: ajijijija", "¿Cuántos vigilan los cañaverales del sur?: unos cuatro", "Vegetta: 777% de facha"]
 
 client.on("ready", () => {
     console.log("Estoy listo!");
@@ -164,7 +174,7 @@ client.on("ready", () => {
  client.on("message", (message) => {
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
-       number = 150;
+       number = 160;
        imageNumber = Math.floor (Math.random() * (number -1 +1)) +1;
        message.channel.send(mensajes[imageNumber-1], {
             files: [
