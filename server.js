@@ -99,7 +99,7 @@ let mensajes = [
 "¡Has capturado el skate sobre ruedas! Menudo swag tío",
 "¡Has capturado un emoji hetero! Buenas noches princesa",
 "¡Has capturado 4 achantes en la puerta de marina! Te lo has comío 4 veces eeee",
-"¡Has capturado Fuyu no Hanashi! Temardo de Given",
+"¡Has capturado Fuyu no Hanashi! Me gusta la parte en la que dice Mada tokenai mahō no yōna",
 "¡Has capturado la Virgen del Pilar! Dice que no quiere ser francesa",
 "¡Has capturado Boboddy! La primera B es por Biznuz",
 "¡Has capturado al vecino mientras cortaba las plantas de su jardín! Joder tío, ya le has jodido todo",
@@ -161,7 +161,27 @@ let mensajes = [
 "¡Has capturado el manillar de aquel incidente! Literalmente la peor decisión que tomé en la vida",
 "¡Has capturado a Szeth-son-son-Vallano! Es calvo",
 "¡Has capturado un temazo! Tiene hasta las lyrics para que no te pierdas al cantar ole ole ole ole beti oleee",
-"¡Has capturado la prueba del código morse! Apunta Varo: raya punto punto espacio creo ¿punto? quizás era una raya da igual punto punto raya puede que espacio ¿lo estás apuntando?"]
+"¡Has capturado la prueba del código morse! Apunta Varo: raya punto punto espacio creo ¿punto? quizás era una raya da igual punto punto raya puede que espacio ¿lo estás apuntando?",
+"¡Has capturado la intro de un youtuber que está empezando! Espero que le vaya bien",
+"¡Has capturado un mensaje importante de CD Projekt! Parece que se vuelve a retrasar el juego, esperemos que salga bien",
+"¡Has capturado un npc sin cargar del Cyberpunk! No pasa nada, un fallo lo tiene cualquiera",
+"¡Has capturado öOoOoOoOoOo! Una banda de rock experimental francesa, la recomiendo",
+"¡Has capturado a David Bisbal Japonés! Ave María-chan",
+"¡Has capturado unas cuantas esponjas! Mételas en una bolsa antes de pasar por caja",
+"Vaya, por fin has despertado. ¡Has capturado un arresto!",
+"¡Has capturado a David Tennant! Tiene puesto el traje de los domingos",
+"¡Has capturado una filtración del nuevo personaje del Smash! Lo he visto en 4chan",
+"¡Has capturado un croissant relleno de caca! ¡Mi favorito!",
+"¡Has capturado un concierto de Muse desde un ángulo muy agradable! Aun así es muy chulo",
+"¡Has capturado una pandilla de amigos! Hay uno negro",
+"¡Has capturado una frase del joker! Da que pensar",
+"¡Has capturado el recuento de las cacas! Esto es secreto, no lo compartas",
+"¡Has capturado a Lisa Simpsons! Necesita un aparato",
+"¡Has capturado un río! Si lleva agua, suena, o algo así",
+"¡Has capturado al del medio de los Chichos! Se me ha aparecío en sueños",
+"¡Has capturado a Chiqui de Gran Hermano! No la recuerdo en la obra de George Orwell",
+"¡Has capturado el Big Bang! Ahí te has pasao",
+"¡Has capturado Despacito 2! Por fin"]
 
 let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Catalán", "Basadísimo", "Emprendedor", "Otaku", "Suerte en cajas del OW", "Heterosexualidad", "Joto", "RafaTriviP", "Dab", "Amor", "Salud", "Dinero", "Suerte", "Fuerza", "Destreza", "Inteligencia", "Excitado", "Mapuche", "Madrileño", "Furro", "Escultura Griega", "Kawaii", "Destornillante", "Máquina", "Fiera"]
 
@@ -174,7 +194,7 @@ client.on("ready", () => {
  client.on("message", (message) => {
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
-       number = 160;
+       number = 180;
        imageNumber = Math.floor (Math.random() * (number -1 +1)) +1;
        message.channel.send(mensajes[imageNumber-1], {
             files: [
