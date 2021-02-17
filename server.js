@@ -211,11 +211,12 @@ let mensajes = [
 "¡Has capturado un mojón! Te guiará por tu camino",
 "¡Has capturado al del bigote de Mocedades! Le queda bien, para qué mentir",
 "¡Has capturado a Puzzle! El verdadero Rey de los Piratas",
-"¡Has capturado la oreja de Van Gogh! ¿Lo pillas? Como el grupo XDDDDD qué pechá de reir"]
+"¡Has capturado la oreja de Van Gogh! ¿Lo pillas? Como el grupo XDDDDD qué pechá de reir",
+"¡Has capturado un leak del próximo Nintendo Direct! Llevo esperando este juego durante años"]
 
 let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Catalán", "Basadísimo", "Emprendedor", "Otaku", "Suerte en cajas del OW", "Heterosexualidad", "Joto", "RafaTriviP", "Dab", "Amor", "Salud", "Dinero", "Suerte", "Fuerza", "Destreza", "Inteligencia", "Excitación", "Mapuche", "Madrileño", "Furro", "Escultura Griega", "Kawaii", "Destornillante", "Máquina", "Fiera", "Sueño", "Hambre", "Desidia", "Felicidad"]
 
-let horoscopoExtra = ["Cyberpunk: 2077%", "Fallout: 76%", "Soldado: 76%", "Tú: en mi camita bb", "Leones necesarios para derrotar al sol: 1000000000000", "Mi bebesita: bebe lin", "Arctic Monkeys: 505%", "Rush: 2112%", "RafaTrivi: P", "El final de Ronda de la Manca: la casa de Trivi", "Dinero: más bien poco", "Nice: 69%", "Illo: Juan", "Cómo acabarás según un vagabundo: Solos, tristes y abandonados", "Ben: 10%", "Schalke: 04%", "Iván: B", "Sneaky Reinhardt: por favor Fran no", "Belleza: 10000%", "La ardilla hace: ajijijija", "¿Cuántos vigilan los cañaverales del sur?: unos cuatro", "Vegetta: 777% de facha"]
+let horoscopoExtra = ["Cyberpunk: 2077%", "Fallout: 76%", "Soldado: 76%", "Sum: 41%", "Blink: 182%", "Tú: en mi camita bb", "Leones necesarios para derrotar al sol: 1000000000000", "Mi bebesita: bebe lin", "Arctic Monkeys: 505%", "Rush: 2112%", "RafaTrivi: P", "El final de Ronda de la Manca: la casa de Trivi", "Dinero: más bien poco", "Nice: 69%", "Illo: Juan", "Cómo acabarás según un vagabundo: Solos, tristes y abandonados", "Ben: 10%", "Schalke: 04%", "Iván: B", "Sneaky Reinhardt: por favor Fran no", "Belleza: 10000%", "La ardilla hace: ajijijija", "¿Cuántos vigilan los cañaverales del sur?: unos cuatro", "Vegetta: 777% de facha"]
 
 client.on("ready", () => {
     console.log("Estoy listo!");
@@ -224,7 +225,7 @@ client.on("ready", () => {
  client.on("message", (message) => {
    if(message.content.startsWith("/capturar")) {
        var number, imageNumber;
-       number = 210;
+       number = 211;
        imageNumber = Math.floor (Math.random() * (number -1 +1)) +1;
        message.channel.send(mensajes[imageNumber-1], {
             files: [
@@ -234,7 +235,7 @@ client.on("ready", () => {
    }
       if(message.content.startsWith("/horoscopo")) {
        var lista = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
-	   var listaExtra = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]; 
+	   var listaExtra = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]; 
 		lista = lista.sort(function() {return Math.random() - 0.5});
 		listaExtra = listaExtra.sort(function() {return Math.random() - 0.5});
        message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopo[lista[1]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopo[lista[2]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopoExtra[listaExtra[0]]);
