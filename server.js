@@ -239,7 +239,7 @@ let mensajes = [
 "¡Has capturado un vaso con fresas! Es mi vaso favorito",
 "¡Has capturado una pintura al óleo! Es el mono con abrigo que se coló en un Ikea de Toronto",
 "¡Has capturado un tré! Tré",
-"¡Has capturado un tranquilo señor! Hoy ha comido cocido, está bien alimentado"
+"¡Has capturado un tranquilo señor! Hoy ha comido cocido, está bien alimentado",
 "¡Has capturado un pedazo de notición! Gracias a este medio por traernos noticias tan importantes de manera profesional",
 "¡Has capturado un perrájaro! Can science explain this?",
 "¡Has capturado a mega-pikachu! Pokémon inicial en el juego de la octava generación Pokémon Pistola",
