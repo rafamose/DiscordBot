@@ -244,12 +244,40 @@ let mensajes = [
 "¡Has capturado un perrájaro! Can science explain this?",
 "¡Has capturado a mega-pikachu! Pokémon inicial en el juego de la octava generación Pokémon Pistola",
 "¡Has capturado un...! Ah, sí, perdona, que no puedo hablar, está hablando por teléfono",
-"¡Has capturado el mod de Alexelcapo en The Binding of Isaac! Uno de los personajes más importantes de la Biblia"]
+"¡Has capturado el mod de Alexelcapo en The Binding of Isaac! Uno de los personajes más importantes de la Biblia",
+"¡Has capturado a Calvomon! Bueno, no se llama así. Ni siquiera sé diferenciar si es un Digimon o un personaje de Bobobo",
+"¡Has sacado un 20 natural! Cuenta cómo has ganado ese pulso",
+"¡Has capturado la calculadora de Nintendo Switch! Por solo 9 euros podrás sumar números. Comentario con 0 unidades de mentiras",
+"¡Has capturado a Homer pegándole una patada a Marge! Esto no se hace chavales, es un mal ejemplo",
+"¡Has capturado el casco al que Aragorn le pegó una patada! Ese maldito cabrón, Aragorn aún prepara su venganza",
+"¡Has capturado a Zarya! Sí, simplemente Zarya. Ya lo vaticinó Iván. Si no me creeis buscad en charloteo el día 22 de septiembre de 2021",
+"¡Has capturado un valenciano! Tiene unos coches bugeaos detrás, es algo típico de Valencia",
+"¡Has capturado una hostia! Toma, que te den, payaso",
+"¡Has capturado un streamer de fortnite! Es misógino y probablemente tenga padres ricos",
+"¡Has capturado un tren! ¿Pero qué haces quieto? ¡Sigue al maldito tren!",
+"¡Has capturado a los Jacksons 5! Ah no, espera. Falta uno. ¿Alguien lo ha visto?",
+"¡Has capturado un puente! Ponlo encina de un río. Pero atravesado, porque si lo pones paralelo no tiene sentido",
+"¡Has pescado una lubina! Pues mejor que una sardina...",
+"¡Te has capturado a ti mismo! Muajaja, era una trampa",
+"¡Has capturado el Supra Mayro Kratt! Vaya juegazo",
+"¡Has capturado una barbería Laclasse!"]
 
-let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Catalán", "Basadísimo", "Emprendedor", "Otaku", "Suerte en cajas del OW", "Heterosexualidad", "Jose", "RafaTriviP", "Dab", "Amor", "Salud", "Dinero", "Suerte", "Fuerza", "Destreza", "Inteligencia", "Excitación", "Mapuche", "Madrileño", "Furro", "Escultura Griega", "Kawaii", "Destornillante", "Máquina", "Fiera", "Sueño", "Hambre", "Desidia", "Felicidad", "Cargando", "Energías", "Ganas de salir de la cama", "Probabilidad que tengo de salir contigo si te lo pido", "Horny", "Gallego", "Droga", "Batería del móvil", "Ganas de chirigotas", "Alcohol en sangre", "Probabilidad de shiny en el siguiente pokémon", "Parecido con Dwayne \"The Rock\" Johnson", "Sexy", "Bello", "Potensia sersual", "Porcentaje de ulti"]
+let horoscopo = [ "Refachería", "Vasco", "Andaluz", "Catalán", "Basadísimo", "Emprendedor", "Otaku", "Suerte en cajas del OW", "Heterosexualidad", "Jose", "RafaTriviP", "Dab", "Amor", "Salud", "Dinero", "Suerte", "Fuerza", "Destreza", "Inteligencia", "Excitación", "Mapuche", "Madrileño", "Furro", "Escultura Griega", "Kawaii", "Destornillante", "Máquina", "Fiera", "Sueño", "Hambre", "Desidia", "Felicidad", "Cargando", "Energías", "Ganas de salir de la cama", "Probabilidad que tengo de salir contigo si te lo pido", "Horny", "Gallego", "Droga", "Batería del móvil", "Ganas de chirigotas", "Alcohol en sangre", "Probabilidad de shiny en el siguiente pokémon", "Parecido con Dwayne \"The Rock\" Johnson", "Sexy", "Bello", "Potensia sersual", "Porcentaje de ulti", "Calvo", "Innovador"]
 
-let horoscopoExtra = ["Cyberpunk: 2077%", "Fallout: 76%", "Soldado: 76%", "Sum: 41%", "Blink: 182%", "Tú: en mi camita bb", "Leones necesarios para derrotar al sol: 1000000000000", "Mi bebesita: bebe lin", "Arctic Monkeys: 505%", "Rush: 2112%", "RafaTrivi: P", "El final de Ronda de la Manca: la casa de Trivi", "Dinero: más bien poco", "Nice: 69%", "Illo: Juan", "Cómo acabarás según un vagabundo: Solos, tristes y abandonados", "Ben: 10%", "Schalke: 04%", "Iván: B", "Sneaky Reinhardt: por favor Fran no", "Belleza: 10000%", "La ardilla hace: ajijijija", "¿Cuántos vigilan los cañaverales del sur?: unos cuatro", "Vegetta: 777% de facha", "Nadie: h-", "Vikingos: la puta mejor serie", "Tequila: tutu tututu tutu tu", "Toxicidad Fuera: mala vibra fuera", "Porrillo: 420%", "Introduce el código de seguridad de tu tarjeta de crédito para conseguir 1000 pavos en Fortnite: ", "Cajas que te dan al llegar al nivel 100: 100"]
+let horoscopoExtra = ["Cyberpunk: 2077%", "Fallout: 76%", "Soldado: 76%", "Sum: 41%", "Blink: 182%", "Tú: en mi camita bb", "Leones necesarios para derrotar al sol: 1000000000000", "Mi bebesita: bebe lin", "Arctic Monkeys: 505%", "Rush: 2112%", "RafaTrivi: P", "El final de Ronda de la Manca: la casa de Trivi", "Dinero: más bien poco", "Nice: 69%", "Illo: Juan", "Cómo acabarás según un vagabundo: Solos, tristes y abandonados", "Ben: 10%", "Schalke: 04%", "Iván: B", "Sneaky Reinhardt: por favor Fran no", "Belleza: 10000%", "La ardilla hace: ajijijija", "¿Cuántos vigilan los cañaverales del sur?: unos cuatro", "Vegetta: 777% de facha", "Nadie: h-", "Vikingos: la puta mejor serie", "Tequila: tutu tututu tutu tu", "Toxicidad Fuera: mala vibra fuera", "Porrillo: 420%", "Introduce el código de seguridad de tu tarjeta de crédito para conseguir 1000 pavos en Fortnite: ", "Cajas que te dan al llegar al nivel 100: 100",//31 
+"Tirada de sigilo necesaria para esconderte: 10", "CR: 7", "CS: GO", "Maroon: 5", "Mis cojones: 33", "2: pac", "2 barras de pan: son 1'20€ por favor"]
 
+let horoscopoLargo = [
+"Hoy, la persona que tanto amas, se irá de tu vida. No solo se va de tu vida, si no que se va de la vida de todos. Y no es que vaya a morir, va a trascender a un plano de la realidad imperceptible para cualquier forma de vida terrenal. Pero no estés triste, ahora esa persona posee todo el conocimiento reunido por el universo y es consciente de que le amas, y eso le hace feliz, si es que sigue teniendo eso tan banal a lo que llamamos \"sentimientos\"",
+"Es tu día. Escúchame bien. Es tu día. No confundir con \"Estudia\". Es tu puto día. Sal a la calle con los genitales al aire y echa el currículum donde quieras, te van a contratar sí o sí. Cuidado, no lo eches a la papelera, porque entonces la papelera dejará su puesto de trabajo y te tocará a ti tragarte toda la basura de los demás. Un gran poder conlleva tener cuidadito, o algo así",
+"¡CUIDADO! ¡ESQUIVA ESO! Hehe, es broma, no soy capaz de adivinar los momentos exactos de los hechos futuros. Pero ojo a lo que te voy a decir. Hoy vas a sufrir un ataque de un animal furioso, probablemente debido a que le has pisado la cola. De hecho, será una serpiente, que como todos sabemos, las serpientes se componen de simplemente cola. Esquívalo a la izquierda y no tendrás problema, solo es un ataque y se cansará. De nada eh",
+"Hoy te crecerá una picha. Si ya tienes una, te crecerá a partir del final de la anterior. Y se mantiene la fresa de la picha de antes, que funcionará como articulación. Más bien como una bisagra, puede doblarse 180 grados, y se guarda como si de un estuche se tratara. Si no tenías picha, cuando la nueva termine de crecer, se caerá. Digamos que depende de la persona, será picha perenne o picha caduca.",
+"Buenoo, si yo te contase lo que te pasa hoy. De verdad, menuda movida. Pero es que pff he quedado tío, llego tarde. Sí sí, sé que esto está feo por mi parte, pero es que hoy es un día importante porque mi bola de adivinación me dice que si llego tarde a quedar, me pierdo a un mono haciendo skate. Bueno ya mañana te atiendo adios chao",
+"Vale vale, atiende porque esto es flipante. Hoy te vas a ser millonario. Pero solo durante 1 segundo. No sé exáctamente cuándo, pero intuyo que entre las 22 y las 23 horas. Lo único que se me ocurre es que tengas la cesta de amazon llena de cosas a un click de pagarlo. No me seas hijo de la grandísima puta y lo gastes en bitcoins o mierdas de esas, puto friki liberal de los putos cojones. Y ya que estás invita a algo anda, no te cuesta nada meter en la cesta un juego de la play pa mí aunque sea",
+"Hoy es el peor día de tu vida. En cuanto termines de leer esto van a empezar a llover cuchillos. Un paraguas normal no funciona, obviamente, me parece absurdo que tenga yo que venir a decirlo. Así que te recomiendo que mientras lees esto, vayas corriendo a por un casco de obra. Para darte tiempo suficiente, voy a contarte algo que me ha pasado hoy. Una señora se acerca a mí por la calle y me dice: oye te estaba esperando. Y luego resulta que se había equivocado de persona XDDDDDDD hay que ser gilipollas para equivocarte. Espero que estés a salvo ya porque me he cansado de hablar.",
+"Rápido, abre una caja en el Overwatch, te van a tocar 4 legendarias. Si cuando lees esto ya no existe Overwatch (por fin) porque Blizzard se ha ido a la mierda, tira un deseo en el Genshin que de waifus no se cansa la gente. Y si tampoco juegas al chocho impacto, yo que sé ábrete el ano a ver qué sale. Es que de verdad que persona más sosa",
+"Oh, eres tú. Vale un momento, que estaba mirando otra cosa. Pone aquí algo de que hoy vas a creerte la persona más bella del mundo. Ya era hora joder. Te he dicho millones de veces que eres la persona más bella que he conocido. Y tú dale conque es mentira, que si \"calla tonti\", que si \"ay qué bobo eres cállate\". Pues no me da la gana callarme la boca, que te quede claro. Serás una persona bellísima pero pf qué coñazo",
+"Mira, hoy te traigo un trato. Pone aquí que vas a encontrarte un billete de 500€ por la calle. Pero qué tal si te digo que te cambio esos 500€ por un chiste. Tarde, ya voy a empezar a contarlo. Va una aceituna esquiando y se muere o algo así no me acuerdo voy corriendo que ya veo dónde está el billete. Adios"]
 client.on("ready", () => {
     console.log("Estoy listo!");
  });
@@ -266,10 +294,19 @@ client.on("ready", () => {
        });
    }
       if(message.content.startsWith("/horoscopo")) {
-       var lista = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48];
+       var lista = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47];
 	   var listaExtra = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]; 
 		lista = lista.sort(function() {return Math.random() - 0.5});
 		listaExtra = listaExtra.sort(function() {return Math.random() - 0.5});
+       message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopo[lista[1]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopo[lista[2]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopoExtra[listaExtra[0]]);
+   }
+   if(message.content.startsWith("/horoscopowenoo")) {
+	    var lista = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47];
+	   var listaExtra = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]; 
+	   var listaHoroscopo = []
+	   lista = lista.sort(function() {return Math.random() - 0.5});
+		listaExtra = listaExtra.sort(function() {return Math.random() - 0.5});
+		listaHoroscopo = listaHoroscopo.sort(function() {return Math.random() - 0.5});
        message.channel.send("Tu horóscopo es el siguiente: \n" + horoscopo[lista[0]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopo[lista[1]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopo[lista[2]] + ": " + Math.round(Math.random()*120) + "%, " + horoscopoExtra[listaExtra[0]]);
    }
  
